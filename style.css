@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
+:root {
+  --pink: #ff69b4;
+  --lightpink: rgb(229, 102, 144);
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mystery Quest', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--pink);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-img {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+header img {
+  width: 300px;
+  object-fit: contain;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  font-size: 30px;
+  color: var(--pink);
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+header nav ul a:hover {
+  color: var(--lightpink);
+}
+
+section {
+  margin: 120px 30px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: var(--pink);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.about img {
+  width: 500px;
+  margin-right: 40px;
+  object-fit: cover;
+  box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+  -webkit-box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+  -moz-box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+}
+
+.about p {
+  font-size: 30px;
+  line-height: 45px;
+  color: #4a443d;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 30px auto;
+}
+
+.gallery-item {
+  padding: 20px;
+  box-shadow: -2px 4px 48px -2px rgba(10, 9, 9, 0.57);
+  -webkit-box-shadow: -2px 4px 48px -2px rgba(10, 9, 9, 0.57);
+  -moz-box-shadow: -2px 4px 48px -2px rgba(10, 9, 9, 0.57);
+  position: relative;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-item-text p {
+  color: rgb(0, 0, 0);
+}
+
+.gallery-like {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(42, 40, 40, 0.3);
+}
+
+.gallery-item:hover .gallery-like {
+  display: flex;
+}
+
+.gallery-like img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.trip-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid var(--pink);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.trip p {
+  color: black;
+  font-size: 20px;
+}
+
+.trip h3 {
+  font-size: 30px;
+}
+
+.trip a {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--pink);
+  color: #ff69b4;
+}
+
+.trip a:hover {
+  color: black;
+  background-color: var(--lightpink);
+  border-color: var(--lightpink);
+}
+
+#trips {
+}
+
+.shining-star {
+  font-size: 70px;
+  animation: shine 1.5s infinite alternate ease-in-out;
+}
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 15px #ffdd55, 0 0 20px #ffcc33, 0 0 25px #fffb00;
+  }
+
+  100% {
+    text-shadow: 0 0 30px #f75aff, 0 0 40px #ff45e0, 0 0 45px #ff00d9;
+  }
+}
+
+.medals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.medal-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+}
+
+.medal-item-text h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff45e0;
+  margin-bottom: 15px;
+}
+
+.medal-item-text p {
+  font-size: 20px;
+}
+
+.medal-item-icon img {
+  width: 90px;
+  margin-top: 15px;
+}
+
+#contacts {
+  box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+  -webkit-box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+  -moz-box-shadow: -2px 4px 48px 8px rgba(255, 105, 180, 0.75);
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+form {
+  width: 500px;
+  padding: 30px;
+  border: 2px solid var(--pink);
+}
+
+form input {
+  padding: 15px;
+  border: 1px solid var(--pink);
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 20px auto;
+  border: 1px solid var(--pink);
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(255, 212, 248);
+  color: var(--pink);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--pink);
+  color: #ffbbe6;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trip-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trip {
+    width: 100%;
+  }
+
+  .medals {
+    flex-direction: column;
+  }
+
+  form {
+    width: 300px;
+  }
+}
